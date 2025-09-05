@@ -1,29 +1,29 @@
-# Resume Section Classifier (DistilBERT)
+# DistilBERT Resume Classification (Applied Research @ Lucerna Labs)
 
-This project fine-tunes **DistilBERT** to classify segments of resumes into categories like  
-*Education, Skills, Projects, Experience, Certifications, etc.*  
-
-It complements the **Resume Segmenter (LLM Pipeline)** by training a lightweight transformer model for fast inference.
+This applied research project fine-tuned **DistilBERT** to classify resume sections  
+into categories like *Education, Skills, Projects, Experience, Achievements, etc.*  
 
 ---
 
 ## 📌 Project Overview
-- **Input Dataset**: Created from structured JSON resumes.
-  - `train.jsonl` (3024 samples)
-  - `val.jsonl` (757 samples)
+- **Dataset**: ~3,000 training samples, ~750 validation samples.
 - **Model**: DistilBERT (`distilbert-base-uncased`) with classification head.
 - **Training Setup**:
   - 5 epochs
   - Batch size = 8
   - Optimizer = AdamW
-  - Metrics = Accuracy & Weighted F1
+  - Runtime = ~6 hours
+- **Evaluation Metrics**:
+  - Accuracy
+  - Weighted F1 score
 
 ---
 
 ## 📊 Results
+- **Training Loss**: ~0.1256
+- **Validation Loss**: ~0.1273
 - **Validation Accuracy**: ~98.0%
 - **Weighted F1 Score**: ~97.9%
-- **Training Time**: ~6 hours on GPU
 
 ---
 
@@ -40,6 +40,9 @@ distilbert-resume-classifier/
 ---
 
 ## 🚀 Why This Project
+- Addresses **resume parsing automation** for HR tech.
+- Shows ability to **fine-tune and evaluate transformers**.
+- Research-grade experiment with high accuracy results.
 - LLMs are powerful but costly for inference.
 - DistilBERT offers **fast, efficient classification** suitable for deployment.
 - Demonstrates ability to fine-tune state-of-the-art NLP models.
@@ -51,3 +54,7 @@ distilbert-resume-classifier/
 - Transformer fine-tuning with Hugging Face.
 - Model evaluation (accuracy, F1).
 - Saving & exporting models for deployment.
+- Hugging Face Trainer API.
+- Transformer fine-tuning (DistilBERT).
+- Model evaluation (accuracy, F1).
+- Building end-to-end inference pipeline.
