@@ -28,15 +28,16 @@ into categories like *Education, Skills, Projects, Experience, Achievements, etc
 ---
 
 ## 📂 Repository Structure
+```text
 distilbert-resume-classifier/
-├── prepare_dataset.ipynb # JSON → train/val dataset
-├── train_resume_model.ipynb # Training notebook
-├── Distilbert_model.ipynb # Final model training & evaluation
-├── train.jsonl # Training dataset
-├── val.jsonl # Validation dataset
-├── resume-segmenter/ # Saved model & tokenizer
+├── prepare_dataset.ipynb       # JSON → train/val dataset
+├── train_resume_model.ipynb    # Training notebook
+├── Distilbert_model.ipynb      # Final model training & evaluation
+├── train.jsonl                 # Training dataset
+├── val.jsonl                   # Validation dataset
+├── resume-segmenter/           # Saved model & tokenizer
 └── README.md
-
+```
 ---
 
 ## 🚀 Why This Project
